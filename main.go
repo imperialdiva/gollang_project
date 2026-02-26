@@ -28,5 +28,3 @@ func main() {
 	server := &http.Server{Addr: ":8080", Handler: mux, ReadHeaderTimeout: 5 * time.Second}
 	server.ListenAndServe()
 }
-
-const maxBodyBytes = 1024 * 1024
