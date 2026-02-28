@@ -30,7 +30,7 @@ func main() {
 	/* 	mux.HandleFunc("GET /users", func(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-type", "application/json")
 	fmt.Println("slash") */
-	/* }) */
+	/* }) тут надо сделать вложенные стурктуры с error */
 	srv := &http.Server{
 		Addr:              ":8080",
 		Handler:           mux,
